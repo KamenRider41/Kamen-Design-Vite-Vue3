@@ -1,0 +1,14 @@
+<h1>Demo</h1>
+<div id="app"></div>
+<script type="module">
+  import { createApp } from "vue/dist/vue.es-bundler.js";
+  import KamenUI, { SFCButton, JSXButton, KMButton } from "../../dist/Kamen-ui.es.js";
+
+  createApp({
+    template: `
+      <KMButton/>
+      <JSXButton/>
+      <SFCButton/>
+    `}).use(KamenUI).mount('#app')
+
+</script>
