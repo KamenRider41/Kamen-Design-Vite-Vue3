@@ -13,10 +13,21 @@ const colors = [
   "purple",
   "pink",
 ];
+const icons = [
+  "search",
+  "edit",
+  "check",
+  "message",
+  "star-off",
+  "delete",
+  "add",
+  "share",
+]
 
 const safelist = [
   ...colors.map((v) => `bg-${v}-500`),
   ...colors.map((v) => `hover:bg-${v}-700`),
+  ...icons.map((v) => `i-ic-baseline-${v}`)
 ];
 
 export default () =>

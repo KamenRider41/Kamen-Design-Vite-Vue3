@@ -6,6 +6,9 @@ export const props = {
     type: String as PropType<IColor>,
     default: 'blue'  // 设定默认颜色
   },
+  icon: {
+    type: String
+  }
 }
 export default defineComponent({
   name: "KMButton",
@@ -26,6 +29,7 @@ export default defineComponent({
       cursor-pointer 
       `}
     >
+      {props.icon ? <i class={`i-ic-baseline-${props.icon} p-3`}></i> : ""}
       {slots.default ? slots.default() : ''}
     </button>
   }
