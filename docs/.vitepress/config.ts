@@ -9,12 +9,38 @@ const guideSidebar = [
     ]
   }
 ]
+const componentSidebar = [
+  {
+    text: '基础组件',
+    items: [
+      {
+        text: 'Button按钮', link: '/components/Button/button'
+      }
+    ]
+  },
+  {
+    text: '表单组件',
+    items: [
+      {
+        text: '', link: '/components/'
+      }
+    ]
+  },
+  {
+    text: 'Funning-CSS',
+    items: [
+      {
+        text: '', link: '/components/'
+      }
+    ]
+  },
+]
 
 export default defineConfig({
-  title: 'Kamen-UI',
+  title: 'Kamen-Design',
   themeConfig: {
     logo: '/logo.png',
-    siteTitle: 'Kamen-UI',
+    siteTitle: 'Kamen-Design',
     socialLinks: [
       {
         icon: 'github', link: 'https://github.com/KamenRider41/Kamen-Design-Vite-Vue3'
@@ -22,33 +48,12 @@ export default defineConfig({
     ],
     nav: [
       { text: '指南', items: guideSidebar },
-      // { text: "组件", link: "/components/Button/button", activeMatch: "/components/Button/" },
+      { text: "组件", items: componentSidebar },
     ],
-    sidebar: [
-      {
-        text: '入门',
-        items: [
-          { text: "快速上手", link: "/guide/index" }
-        ]
-      },
-      {
-        text: '组件',
-        items: [
-          { text: 'Button 按钮', link: '/components/Button/button' },
-          // { text: 'Link 链接', link: '/components/Link/link' },
-          // { text: 'Title 标题', link: '/components/Title/title' },
-          // { text: 'Avatar 头像', link: '/components/Avatar/avatar' }
-        ]
-      },
-      // {
-      //   text: '表单',
-      //   items: [
-      //     { text: 'CheckBox 复选框', link: '/components/CheckBox/checkbox' },
-      //     { text: 'Input 输入框', link: '/components/Input/input' },
-      //     { text: 'Switch 开关', link: '/components/Switch/switch' }
-      //   ]
-      // }
-    ]
+    sidebar: {
+      '/guide/': guideSidebar,
+      '/components/': componentSidebar,
+    }
   },
   markdown: {
     config: (md) => {

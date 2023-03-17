@@ -10,7 +10,7 @@ export const props = {
   // 新增
   size: {
     type: String as PropType<ISize>,
-    default: "medium",
+    default: "large",
   },
   round: {
     type: Boolean,

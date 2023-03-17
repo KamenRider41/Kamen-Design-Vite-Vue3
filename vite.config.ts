@@ -28,8 +28,8 @@ export default defineConfig({
     cssCodeSplit: true,   // 追加
     lib: {
       entry: "./src/entry.ts",
-      name: "KamenUI",
-      fileName: "Kamen-ui",
+      name: "KamenDesign",
+      fileName: "Kamen-design",
       // 导出模块格式
       formats: ["es", "umd", "iife"],
     },

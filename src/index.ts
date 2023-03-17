@@ -1,5 +1,5 @@
 import { createApp } from "vue/dist/vue.esm-browser";
-import KamenUI from "./entry"
+import KamenDesign from "./entry"
 createApp({
   template: `
   <div>
@@ -11,5 +11,5 @@ createApp({
  </div>
   `
 })
-  .use(KamenUI)
+  .use(KamenDesign)
   .mount("#app");

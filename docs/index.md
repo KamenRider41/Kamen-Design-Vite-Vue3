@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: Kamen-UI
+  name: Kamen-Design
   text: 基于Vue3与UnoCSS设计的组件库
   tagline: Made by vite
   image:

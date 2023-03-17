@@ -1,17 +1,17 @@
 # 🐱快速开始
-`Kamen-ui`采用`UnoCSS`原子化CSS引擎来开发的Vue3组件库。是新时代的新作品，把时髦打出来，迎接我的到来。
+`Kamen-Design`采用`UnoCSS`原子化CSS引擎来开发的Vue3组件库。是新时代的新作品，把时髦打出来，迎接我的到来。
 ## 引入
 这里当然就推荐pnpm
 ```shell
-pnpm add kamen-ui
+pnpm add kamen-design
 ```
 在`main.js`或`main.ts`添加：
 ```js
 import { createApp } from 'vue'
 import App from './App.vue'
-import kamen from 'kamen-ui'
+import kamen from 'kamen-design'
 
-import 'kamen-ui/dist/assets/entry.284eadfc.css'
+import 'kamen-design/dist/assets/entry.284eadfc.css'
 
 import './assets/main.css'
 
