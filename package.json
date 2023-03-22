@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest",
     "dev": "vite",
     "build": "vite build",
     "docs:dev": "vitepress dev docs",
@@ -18,9 +18,12 @@
     "@iconify-json/ic": "1.1.4",
     "@vitejs/plugin-vue": "3.0.3",
     "@vitejs/plugin-vue-jsx": "2.0.0",
+    "@vue/test-utils": "2.0.2",
+    "happy-dom": "6.0.4",
     "unocss": "0.44.5",
     "vite": "3.0.7",
-    "vitepress": "1.0.0-alpha.31"
+    "vitepress": "1.0.0-alpha.31",
+    "vitest": "0.21.1"
   },
   "dependencies": {
     "vue": "3.2.37"
