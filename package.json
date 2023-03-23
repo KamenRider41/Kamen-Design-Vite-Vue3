@@ -11,7 +11,8 @@
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
-    "format": "prettier --write --cache ."
+    "format": "prettier --write --cache .",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
