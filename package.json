@@ -12,7 +12,9 @@
     "docs:serve": "vitepress serve docs",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
     "format": "prettier --write --cache .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test:run": "vitest run",
+    "preinstall": "node ./scripts/preinstall.js"
   },
   "keywords": [],
   "author": "",
@@ -39,6 +41,8 @@
     "vitest": "0.21.1"
   },
   "dependencies": {
+    "@commitlint/cli": "17.0.2",
+    "@commitlint/config-conventional": "17.0.2",
     "typescript": "^5.0.2",
     "vue": "3.2.37"
   }

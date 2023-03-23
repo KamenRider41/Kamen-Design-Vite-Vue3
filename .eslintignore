@@ -1,5 +1,6 @@
 *.sh
 shims-vue.d.ts
+commitlint.config.js
 node_modules
 lib
 demo
