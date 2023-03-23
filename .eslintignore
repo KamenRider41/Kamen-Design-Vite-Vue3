@@ -1,0 +1,11 @@
+*.sh
+shims-vue.d.ts
+node_modules
+lib
+demo
+*.md
+*.scss
+*.woff
+*.ttf
+src/index.ts
+dist

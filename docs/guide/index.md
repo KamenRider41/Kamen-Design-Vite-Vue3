@@ -1,3 +1,10 @@
+<!--
+ * @Author: 41
+ * @Date: 2023-03-16 16:53:00
+ * @LastEditors: 41
+ * @LastEditTime: 2023-03-22 21:05:56
+ * @Description: 
+-->
 # 🐱快速开始
 `Kamen-Design`采用`UnoCSS`原子化CSS引擎来开发的Vue3组件库。是新时代的新作品，把时髦打出来，迎接我的到来。
 ## 引入
@@ -11,7 +18,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import kamen from 'kamen-design'
 
-import 'kamen-design/dist/assets/entry.284eadfc.css'
+import 'kamen-design/dist/entry.css'
 
 import './assets/main.css'
 

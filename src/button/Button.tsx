@@ -1,11 +1,27 @@
-import { defineComponent, PropType, toRefs } from "vue";
+/*
+ * @Author: 41
+ * @Date: 2023-03-15 09:30:14
+ * @LastEditors: 41
+ * @LastEditTime: 2023-03-23 10:51:26
+ * @Description:
+ */
+import { defineComponent, PropType } from "vue";
 import "uno.css";
-export type ISize = "small" | "medium" | "large"
-export type IColor = 'black' | 'gray' | 'red' | 'yellow' | 'green' | 'blue' | 'indigo' | 'purple' | 'pink'
+export type ISize = "small" | "medium" | "large";
+export type IColor =
+  | "black"
+  | "gray"
+  | "red"
+  | "yellow"
+  | "green"
+  | "blue"
+  | "indigo"
+  | "purple"
+  | "pink";
 export const props = {
   color: {
     type: String as PropType<IColor>,
-    default: 'blue'  // 设定默认颜色
+    default: "blue", // 设定默认颜色
   },
   // 新增
   size: {
@@ -21,16 +37,16 @@ export const props = {
     default: false,
   },
   icon: {
-    type: String
+    type: String,
   },
   disabled: {
     type: Boolean,
     default: false,
   },
-} as const
+} as const;
 export default defineComponent({
   name: "KMButton",
-  props,// 注册属性
+  props, // 注册属性
   setup(props, { slots }) {
     const size = {
       small: {
@@ -47,16 +63,17 @@ export default defineComponent({
         x: "4",
         y: "2",
         text: "lg",
-      }
-    }
-    return () => <button
-      disabled={props.disabled}
-      onClick={() => {
-        if (!props.disabled) {
-          // your code
-        }
-      }}
-      class={`
+      },
+    };
+    return () => (
+      <button
+        disabled={props.disabled}
+        onClick={() => {
+          if (!props.disabled) {
+            // your code
+          }
+        }}
+        class={`
         py-${size[props.size].y}
         px-${size[props.size].x}
         ${props.round ? "rounded-full" : "rounded-lg"}
@@ -70,15 +87,12 @@ export default defineComponent({
         hover:text-white
         transition duration-300 ease-in-out transform hover:scale-105
         mx-1
-        ${props.disabled ? 'cursor-not-allowed opacity-50' : ''}
+        ${props.disabled ? "cursor-not-allowed opacity-50" : ""}
       `}
-    >
-      {props.icon ? (
-        <i class={`i-ic-baseline-${props.icon} p-3`}></i>
-      ) : (
-        ""
-      )}
-      {slots.default ? slots.default() : ""}
-    </button>
-  }
+      >
+        {props.icon ? <i class={`i-ic-baseline-${props.icon} p-3`}></i> : ""}
+        {slots.default ? slots.default() : ""}
+      </button>
+    );
+  },
 });

@@ -9,23 +9,36 @@
     "build": "vite build",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:serve": "vitepress serve docs",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
+    "format": "prettier --write --cache ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@iconify-json/ic": "1.1.4",
+    "@rushstack/eslint-patch": "^1.2.0",
     "@vitejs/plugin-vue": "3.0.3",
     "@vitejs/plugin-vue-jsx": "2.0.0",
+    "@vue/eslint-config-prettier": "^7.1.0",
+    "@vue/eslint-config-typescript": "^11.0.2",
     "@vue/test-utils": "2.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.36.0",
+    "eslint-formatter-pretty": "^5.0.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-vue": "^9.9.0",
     "happy-dom": "6.0.4",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.6",
     "unocss": "0.44.5",
     "vite": "3.0.7",
     "vitepress": "1.0.0-alpha.31",
     "vitest": "0.21.1"
   },
   "dependencies": {
+    "typescript": "^5.0.2",
     "vue": "3.2.37"
   }
 }
